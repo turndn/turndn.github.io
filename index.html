@@ -4,10 +4,26 @@ title: {{ site.name }}
 ---
 
 <div id="home">
+  <h1>About</h1>
+  情報系 B4 の学生
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
+  </ul>
+  <h2>興味</h2>
+  <ul>
+  <li>VMM (mainly KVM)</li>
+  <li>Security</li>
+  </ul>
+  <h2 id="contact">連絡先</h2>
+  turndn.up@gmail.com
+
+  <h3>活動</h3>
+  <ul>
+    <li>SANS NETWARS 2015</li>
+    <li>セキュリティ・キャンプ九州 in 福岡 2015</li>
+    <li>セキュリティ・キャンプ全国大会2016</li>
   </ul>
 </div>
