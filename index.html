@@ -8,10 +8,22 @@ title: {{ site.name }}
   情報系 B4 の学生
   <h1>Blog Posts</h1>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+  <div id="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+  {% else %}
+    <span class="pagination-item">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+  {% else %}
+    <span class="pagination-item">Newer</span>
+  {% endif %}
+  </div>
   <h2>興味</h2>
   <ul>
   <li>VMM (mainly KVM)</li>
