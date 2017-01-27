@@ -3,6 +3,7 @@ title:        turndn profile page
 tagline:      
 baseurl:      ""
 paginate:     5
+permalink:    /:categories/:title.html
 
 # About/contact
 author:
