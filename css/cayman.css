@@ -243,24 +243,20 @@ a {
 .pagination {
   overflow: hidden;
   margin: 0 -1.5rem 1rem;
-  color: #ccc;
-  text-align: center;
 }
 
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: solid #eee;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
   border-width: 1px 0;
   text-align: center;
 
   &:first-child {
     margin-bottom: -1px;
   }
-}
-
-a.pagination-item:hover {
-  background-color: #f5f5f5;
 }
 
 @media (min-width: 30em) {
@@ -285,3 +281,16 @@ a.pagination-item:hover {
     }
   }
 }
+
+.category {
+  padding-top: 2rem;
+  margin-top: 2rem; }
+  @media screen and (min-width: 64em) {
+    .category {
+      font-size: 0.9rem; } }
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .category {
+      font-size: 0.9rem; } }
+  @media screen and (max-width: 42em) {
+    .category {
+      font-size: 0.8rem; } }
