@@ -14,7 +14,7 @@ category: book
 システム系におけるセキュリティの検討では TCB (trusted computing base) が重要である．
 
 TCB を小さくすることで，malicious kernel 上で trusted code を実行する方法を提唱してされていた
-[参考1][2], [参考2][3], [参考3][4], [参考4][5]
+(参考[1][2], [2][3], [3][4], [4][5])
 が， application と kernel との RPC インタフェースとして system call APIが定義されている．
 
 Iago attacks は malicious kernel が system call の戻り値を選ぶことによって application に不正な動作をさせる攻撃である．
@@ -28,8 +28,8 @@ application は
 
 また，kernel は保護機構によって直接 application を読んだり改変したりすることはできないが， system call をハンドルし，application の代わりに処理を行う．
 
-kernel の Goal は return value によって trusted application 下で任意の computation を実行させることとなる．
-このとき，シンプルな DoS はスコープに含まない．これは， malicious な kernel はいつでもクラッシュさせたりブートしないといったことが可能なためである．
+kernel の Goal は system call の return value を選ぶことで trusted application 下で任意の computation を行うこととなる．
+このとき，シンプルな DoS はスコープに含まない．これは， malicious な kernel はいつでもクラッシュさせたりブートしないといったことが可能なため．
 
 [1]: http://dl.acm.org/citation.cfm?id=2451145
 [2]: http://dl.acm.org/citation.cfm?id=945463
