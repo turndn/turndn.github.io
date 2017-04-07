@@ -2,7 +2,7 @@
 layout: post
 title:  "Iago attacks 走り書き"
 date:   2017-03-17 23:00:00
-category: book
+category: note
 ---
 
 [Iago attacks][1](ASPLOS '13) は malicious kernel による trusted application への攻撃手法である．
