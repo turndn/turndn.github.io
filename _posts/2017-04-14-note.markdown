@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "GAS syntax 走り書き"
+date:   2017-04-14 23:30:00
+category: note
+---
+
+`.comm` について勘違いしていたのでメモを残す．
+
+xv6-rev9 の entry.S にて
+
+```
+58  # Set up the stack pointer.
+59  movl $(stack + KSTACKSIZE), %esp
+60
+  /* ... */
+67
+68.comm stack, KSTACKSIZE
+```
+
+という部分がある．
+
+```
+.comm stack, KSTACKSIZE
+```
+.comm は COMMon memory arena の 略であり，この場合，BSS セクションに stack という空の領域を KSTACKSIZE 分確保するという意味になる．
+そのため，59 行目は stack の最上位アドレスである `stack + KSTACKSIZE` を `%esp` に代入するというとても自然なコードになる．
