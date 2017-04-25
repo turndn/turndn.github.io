@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "lxrng を設定する"
+date:   2017-04-25 23:00:00
+category: note
+---
+
+[lxrng][1] を設定してソースコードリーディングをしたいことは多々ある．
+情報が古く辛く悲しい気持ちになったので， `Ubuntu 16.04` 上での構築を書きたい．
+
+[1]: http://lxr.linux.no/
