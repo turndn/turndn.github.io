@@ -18,7 +18,7 @@ VM-Exit handler を見ると SimpleVisor が VM Exit のイベントの内何を
 1. VM Exit の原因となった命令の命令長を Guest の EIP に加算して書き込む．
 
 SimpleVisor の VM Exit のハンドラがこのような簡潔さを保ているのは単純にハンドルする命令が限られているからである．
-SimpleVisor によってハンドルされる命令は全て VMCS から命令長を取得することができる [^1], [^2] ．
+SimpleVisor によってハンドルされる命令は全て VMCS から命令長を取得することができる [^1] [^2] ．
 そのため，命令エミュレーション後に命令長を VMCS から読み取って Guest EIP に加算するという方法を採れている．
 
 デバイス関連のエミュレーションを行おうとすると，エミュレートのために命令を Guest EIP からフェッチする必要があるためこの方法は採れなくなる．
@@ -126,6 +126,7 @@ ShvVmxEntryHandler (
 ```
 
 [1]: https://github.com/ionescu007/SimpleVisor
+
 [^1]: VM-exit instruction information (32 bits). This field is used for VM exits due to attempts to execute INS, INVEPT, INVVPID, LIDT, LGDT, LLDT, LTR, OUTS, SIDT, SGDT, SLDT, STR, VMCLEAR, VMPTRLD, VMPTRST, VMREAD, VMWRITE, or VMXON
 [^2]: VM-exit instruction length. CLTS, CPUID, ENCLS, GETSEC, HLT, IN, INS, INVD, INVEPT, INVLPG, INVPCID, INVVPID, LGDT, LIDT, LLDT, LMSW, LTR, MONITOR, MOV CR, MOV DR, MWAIT, OUT, OUTS, PAUSE, RDMSR, RDPMC, RDRAND, RDSEED, RDTSC, RDTSCP, RSM, SGDT, SIDT, SLDT, STR, VMCALL, VMCLEAR, VMLAUNCH, VMPTRLD, VMPTRST, VMREAD, VMRESUME, VMWRITE, VMXOFF, VMXON, WBINVD, WRMSR, XRSTORS, XSETBV, and XSAVES.
 
