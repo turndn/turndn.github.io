@@ -8,8 +8,8 @@ category: note
 LXR を導入したので，[SimpleVisor][1] を読んでいく．
 
 VM-Exit handler を見ると SimpleVisor が VM Exit のイベントの内何をエミュレーションするかが分かる．
-また， `VpState->ExitReason` となっているが，`PSHV_VP_STATE` に VMCS は入っていない．
-`PSHV_VP_STATE` については後に述べる．
+また， `VpState->ExitReason` となっているが，`PSHV_VP_STATE` の指す `SHV_VP_STATE` 構造体には VMCS は入っていない．
+`SHV_VP_STATE` 構造体については後に述べる．
 
 `ShvVmxHandleExit` は次のようなことを行っている．
 
