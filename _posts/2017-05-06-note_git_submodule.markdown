@@ -4,7 +4,7 @@ title:  "Git submodule 覚書"
 date:   2017-05-06 15:00:00
 category: note
 ---
-GitSubmodule についての正しい知識が欲しい場合，この記事を読まずに [GitBook][1] を読む．
+GitSubmodule についての正確かつ体系的な知識が欲しい場合，この記事を読まずに [GitBook][1] を読む．
 
 作業ログと動作のメモ
 
