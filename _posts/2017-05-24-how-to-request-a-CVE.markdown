@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to requests a CVE for open source projects"
-date:   2017-05-024 12:00:00
+date:   2017-05-24 12:00:00
 category: note
 ---
 
