@@ -2,20 +2,9 @@ box: ruby:2.3
 build:
   steps:
     - script:
-        name: Check
-        code: |-
-            if [ "$WERCKER_GIT_BRANCH" == "master" ]; then exit 0; fi
-    - script:
         name: Set timezone
         code: |-
             export TZ="Asia/Tokyo"
-    - script:
-        name: Set up nodejs emvironment
-        code: |
-            curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
-            sudo apt-get update -y
-            sudo apt-get install -y nodejs
-            sudo npm config set registry http://registry.npmjs.org/
     - bundle-install
 
     - script:
@@ -26,37 +15,3 @@ build:
         name: Check syntax error of posts
         code: |
             ! bundle exec jekyll doctor 2>&1 | grep Error
-    - script:
-        name: Make .SSH directory
-        code: |-
-            rm -f $HOME/.ssh
-            mkdir -p $HOME/.ssh
-    - create-file:
-        name: Write SSH key
-        filename: $HOME/.ssh/id_rsa
-        overwrite: true
-        hide-from-log: true
-        content: $DEPLOY_SSH_KEY_PRIVATE
-
-    - script:
-        name: Set permissions for SSH key
-        code: |-
-            chmod 0400 $HOME/.ssh/id_rsa
-    - script:
-        name: Setup repository
-        code: |-
-            git config --global user.name "wercker-bot"
-            git config --global user.email turndn.up@gmail.com
-    - script:
-        name: Set up known_hosts
-        code: |-
-            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-    - script:
-        name: Deploy
-        code: |-
-            if [ "$WERCKER_GIT_BRANCH" == "source" ]; then bundle exec rake deploy; fi
-  after-steps:
-    - script:
-        name: Check
-        code: |-
-            if [ "$WERCKER_GIT_BRANCH" == "master" ]; then exit 0; fi
