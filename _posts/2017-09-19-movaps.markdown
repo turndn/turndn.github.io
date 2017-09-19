@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Exception \#GP occurs during movaps exectution."
+title:  "Exception GP occurs during movaps exectution."
 date:   2017-09-19 23:30:00
 category: note
 ---
@@ -22,7 +22,7 @@ int main()
 ```
 
 上記のようなプログラムを実行すると，`0x7ffff7a62824 <__printf+36>:    movaps XMMWORD PTR [rsp+0x50],xmm0` にて SIGSEGV が発生し，プロセスが強制終了してしまう．
-これは memory operand が 16 byte aligned でなくなるので \#GP 例外が発生する[MOVAPS][1]．
+これは memory operand が 16 byte aligned でなくなるので GP 例外が発生する[MOVAPS][1]．
 
 2 回 push すれば 16 byte alinged になるので，特に問題なく動く．
 
