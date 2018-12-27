@@ -1,0 +1,52 @@
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <title>Grate Western Trail Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/site.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<div id="result">
+  <p>合計: {{ message }}点</p>
+</div>
+
+<div id="coin">
+  お金: <input v-model="value">
+</div>
+<div id="building">
+  建物: <input v-model="value">
+</div>
+<div id="city">
+  都市: <input v-model="value">
+</div>
+<div id="station">
+  駅: <input v-model="value">
+</div>
+<div id="hazard">
+  災害: <input v-model="value">
+</div>
+<div id="cow">
+  家畜: <input v-model="value">
+</div>
+<div id="aim">
+  目的: <input v-model="value">
+</div>
+<div id="station_master">
+  駅長: <input v-model="value">
+</div>
+<div id="labor">
+  労働者: <input v-model="value">
+</div>
+<div id="board">
+  ボード: <input v-model="value">
+</div>
+<div id="token">
+  労働市場トークン: <input v-model="value">
+</div>
+
+<div id="calc">
+  <button v-on:click="calc">Run</button>
+</div>
+<script src="grate.js"></script>
