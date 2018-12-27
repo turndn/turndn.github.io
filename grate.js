@@ -6,7 +6,7 @@ function push_score(name) {
   var score = new Vue({
     el: name,
     data: {
-      value: 0
+      value: NaN
     }
   })
   scores.push(score);
@@ -30,8 +30,9 @@ var calc = new Vue({
       var sum = 0;
       for (var i = 0; i < scores.length; i++) {
         var score = parseInt(scores[i].value, 10);
-        if (score != NaN)
+        if (!isNaN(score)) {
           sum += score;
+        }
       }
       result.message = sum;      
     }
