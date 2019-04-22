@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <title>Takada</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+<div id="app">
+  <v-app id="inspire">
+    <v-toolbar color="indigo"><v-toolbar-title>
+    <span class="white--text">
+    Takada
+    </span>
+    </v-toolbar-title></v-toolbar>
+    <v-form>
+      <v-container>
+        <v-layout row wrap>
+
+
+      <v-flex xs3 sm3 md3>
+        <v-text-field label="a1" v-model="x0" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x0++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs3 sm3 md3>
+        <v-text-field label="i1" v-model="x1" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x1++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs3 sm3 md3>
+        <v-text-field label="u1" v-model="x2" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x2++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs3 sm3 md3>
+        <v-text-field label="e1" v-model="x3" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x3++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p211" v-model="x4" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x4++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p212" v-model="x5" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x5++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p213" v-model="x6" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x6++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p214" v-model="x7" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x7++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p215" v-model="x8" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x8++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p221" v-model="x9" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x9++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p222" v-model="x10" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x10++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p223" v-model="x11" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x11++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p224" v-model="x12" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x12++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p225" v-model="x13" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x13++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p231" v-model="x14" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x14++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p232" v-model="x15" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x15++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p233" v-model="x16" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x16++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p234" v-model="x17" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x17++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p235" v-model="x18" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x18++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p241" v-model="x19" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x19++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p242" v-model="x20" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x20++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p243" v-model="x21" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x21++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p244" v-model="x22" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x22++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p245" v-model="x23" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x23++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p251" v-model="x24" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x24++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p252" v-model="x25" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x25++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p253" v-model="x26" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x26++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p254" v-model="x27" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x27++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p255" v-model="x28" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x28++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p261" v-model="x29" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x29++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p262" v-model="x30" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x30++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p263" v-model="x31" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x31++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p264" v-model="x32" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x32++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs2 sm2 md2>
+        <v-text-field label="p265" v-model="x33" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x33++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="a3" v-model="x34" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x34++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="i3" v-model="x35" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x35++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="u3" v-model="x36" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x36++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="e3" v-model="x37" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x37++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="o3" v-model="x38" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x38++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="ka3" v-model="x39" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x39++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="ki3" v-model="x40" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x40++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="a4" v-model="x41" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x41++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="i4" v-model="x42" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x42++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="u4" v-model="x43" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x43++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="e4" v-model="x44" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x44++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="o4" v-model="x45" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x45++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="ka4" v-model="x46" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x46++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="ki4" v-model="x47" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x47++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs1 sm1 md1>
+        <v-text-field label="ku4" v-model="x48" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x48++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs6 sm6 md6>
+        <v-text-field label="a5" v-model="x49" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x49++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs6 sm6 md6>
+        <v-text-field label="i5" v-model="x50" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x50++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs6 sm6 md6>
+        <v-text-field label="a6" v-model="x51" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x51++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs6 sm6 md6>
+        <v-text-field label="i6" v-model="x52" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x52++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs12 sm12 md12>
+      aaaaa
+      </v-flex>
+
+
+      <v-flex xs3 sm3 md3>
+        <v-text-field label="a7" v-model="x53" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x53++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs3 sm3 md3>
+        <v-text-field label="i7" v-model="x54" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x54++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs3 sm3 md3>
+        <v-text-field label="u7" v-model="x55" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x55++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+      <v-flex xs3 sm3 md3>
+        <v-text-field label="e7" v-model="x56" type="number">
+        </v-text-field>
+        <v-btn color="indigo" dark v-on:click="x56++">
+          <v-icon dark>gavel</v-icon>
+        </v-btn>
+      </v-flex>
+
+
+        </v-layout>
+      </v-container>
+    </v-form>
+    <v-footer color="indigo" app inset>
+      <span class="white--text">&copy; 2019</span>
+    </v-footer>
+  </v-app>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  <script src="takada.js"></script>
+</body>
+</html>
