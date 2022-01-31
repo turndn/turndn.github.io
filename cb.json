@@ -1,0 +1,11 @@
+[
+  {
+    "trigger": {
+      "url-filter": "turndn.github.io",
+      "resource-type": ["image"]
+    },
+    "action": {
+      "type": "block"
+    }
+  }
+]
