@@ -8,6 +8,14 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/site.css">
 </head>
+<style>
+.post:has(> .baz) {
+  background-color: brown;
+}
+.post > .foobar {
+  background-color: blue;
+}
+</style>
 <div id="home">
   <h1>Shimayu BBQ</h1>
   <ul>
@@ -37,11 +45,13 @@
     Shimayu BBQ: .hr_advt
   </div>
   <div class="post">
+    Shimayu BBQ: .post
     <div class="foobar">
       Shimayu BBQ: .post > .foobar
     </div>
   </div>
   <div class="post">
+    Shimayu BBQ: .post
     <div class="baz">
       Shimayu BBQ: .post > .baz
     </div>
