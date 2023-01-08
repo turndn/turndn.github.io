@@ -17,10 +17,9 @@ function copy_exported_to_clipboard() {
 }
 
 function update_default_values() {
-  var unofficial_variant = document.getElementById("unofficial_variant")
-  var num_players = document.getElementById("num_players")
-  console.log(unofficial_variant.checked)
-  console.log(num_players.value)
+  var foresight_data = get_foresight_data(document.getElementById("unofficial_variant").checked,
+                                          Number(document.getElementById("num_players").value))
+  set_foresight_data(foresight_data)
 }
 
 function get_hazard_default() {
@@ -139,6 +138,24 @@ function get_foresight_data(unofficial_variant, num_players) {
 
   if (unofficial_variant) {
     if (num_players == 2) {
+      data.outlaw.o1 -= 3
+      data.outlaw.g1 -= 3
+      data.flood.g4 -= 1
+      data.flood.g2 -= 1
+      data.drought.g4 -= 1
+      data.drought.g2 -= 1
+      data.rockfall.g4 -= 1
+      data.rockfall.g2 -= 1
+
+      data.worker.c2 -= 5
+      data.worker.b2 -= 5
+      data.worker.e2 -= 5
+
+      data.outlaw.o3 -= 1
+      data.outlaw.g3 -= 1
+      data.worker.c3 -= 3
+      data.worker.b3 -= 3
+      data.worker.e3 -= 3
     } else if (num_players == 3) {
       data.outlaw.o1 -= 1
       data.outlaw.g1 -= 2
