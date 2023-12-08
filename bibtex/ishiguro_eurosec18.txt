@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3193111.3193118,
+author = {Ishiguro, Kenta and Kono, Kenji},
+title = {Hardening Hypervisors against Vulnerabilities in Instruction Emulators},
+year = {2018},
+isbn = {9781450356527},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3193111.3193118},
+doi = {10.1145/3193111.3193118},
+abstract = {Vulnerabilities in hypervisors are crucial in multi-tenant clouds and attractive for attackers because a vulnerability in the hypervisor can undermine all the virtual machine (VM) security. This paper focuses on vulnerabilities in instruction emulators inside hypervisors. Vulnerabilities in instruction emulators are not rare; CVE-2017-2583, CVE-2016-9756, CVE-2015-0239, CVE-2014-3647, to name a few. For backward compatibility with legacy x86 CPUs, conventional hypervisors emulate arbitrary instructions at any time if requested. This design leads to a large attack surface, making it hard to get rid of vulnerabilities in the emulator.This paper proposes FWinst that narrows the attack surface against vulnerabilities in the emulator. The key insight behind FWinst is that the emulator should emulate only a small subset of instructions, depending on the underlying CPU micro-architecture and the hypervisor configuration. FWinst recognizes emulation contexts in which the instruction emulator is invoked, and identifies a legitimate subset of instructions that are allowed to be emulated in the current context. By filtering out illegitimate instructions, FWinst narrows the attack surface. In particular, FWinst is effective on recent x86 micro-architectures because the legitimate subset becomes very small. Our experimental results demonstrate FWinst prevents existing vulnerabilities in the emulator from being exploited on Westmere micro-architecture, and the runtime overhead is negligible.},
+booktitle = {Proceedings of the 11th European Workshop on Systems Security},
+articleno = {7},
+numpages = {6},
+keywords = {Instruction Emulator, Security, Virtualization, Hypervisor},
+location = {Porto, Portugal},
+series = {EuroSec'18}
+}
