@@ -1,12 +1,8 @@
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 #home {
-  width: 100%;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
 }
