@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.ico">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <title>Great Western Trail Note for foresight spaces</title>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="apps/gwt_foresight.html">GWT Note for foresight</a>
+    </div>
+  </nav>
+  </head>
+<body>
+  <div class="card" style="width: 96%; margin-left:auto; margin-right:auto;">
+    <div class="card-header">
+      Import
+    </div>
+    <div class="container">
+      <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label" for="for_import">Saved value</label>
+        <textarea class="form-control" id="for_import"></textarea>
+      </div>
+      <button type="button" class="col-sm-1 btn btn-outline-primary" onclick="data_import()">Import</button>
+      <div class="clearfix p-1"></div>
+    </div>
+  </div>
+
+  <div class="clearfix p-1"></div>
+
+  <div class="card" style="width: 96%; margin-left:auto; margin-right:auto;">
+    <div class="card-header">
+      Setting
+    </div>
+    <div class="container">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="unofficial_variant" checked>
+        <label class="form-check-label" for="unofficial_variant">Unofficial variant</label>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="num_players" class="col-sm-2 col-form-label">Players</label>
+        <div class="col-sm-3">
+          <select class="form-select" id="num_players">
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="button" class="col-sm-1 btn btn-outline-primary" onclick="update_default_values()">Apply</button>
+      <div class="clearfix p-1"></div>
+    </div>
+  </div>
+
+  <div class="clearfix p-1"></div>
+
+  <div class="card" style="width: 96%; margin-left:auto; margin-right:auto;" id="flood">
+    <div class="card-header">
+      Flood
+    </div>
+
+    <div class="clearfix p-1"></div>
+
+    <div class="container">
+
+      <div class="mb-3 row">
+        <label class="col-sm-1 col-form-label">G4</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g4">
+        </div>
+        <label class="col-sm-1 col-form-label">G3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g3">
+        </div>
+        <label class="col-sm-1 col-form-label">G2</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g2">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label class="col-sm-1 col-form-label">B3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control b3">
+        </div>
+        <label class="col-sm-1 col-form-label">B2</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control b2">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="clearfix p-1"></div>
+
+  <div class="card" style="width: 96%; margin-left:auto; margin-right:auto;" id="drought">
+    <div class="card-header">
+      Drought
+    </div>
+
+    <div class="clearfix p-1"></div>
+
+    <div class="container">
+
+      <div class="mb-3 row">
+        <label class="col-sm-1 col-form-label">G4</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g4">
+        </div>
+        <label class="col-sm-1 col-form-label">G3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g3">
+        </div>
+        <label class="col-sm-1 col-form-label">G2</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g2">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label class="col-sm-1 col-form-label">B3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control b3">
+        </div>
+        <label class="col-sm-1 col-form-label">B2</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control b2">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="clearfix p-1"></div>
+
+  <div class="card" style="width: 96%; margin-left:auto; margin-right:auto;" id="rockfall">
+    <div class="card-header">
+      Rockfall
+    </div>
+
+    <div class="clearfix p-1"></div>
+
+    <div class="container">
+
+      <div class="mb-3 row">
+        <label class="col-sm-1 col-form-label">G4</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g4">
+        </div>
+        <label class="col-sm-1 col-form-label">G3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g3">
+        </div>
+        <label class="col-sm-1 col-form-label">G2</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g2">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label class="col-sm-1 col-form-label">B3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control b3">
+        </div>
+        <label class="col-sm-1 col-form-label">B2</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control b2">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="clearfix p-1"></div>
+
+  <div class="card" style="width: 96%; margin-left:auto; margin-right:auto;" id="outlaw">
+    <div class="card-header">
+      Outlaw
+    </div>
+
+    <div class="clearfix p-1"></div>
+
+    <div class="container">
+
+      <div class="mb-3 row">
+        <label class="col-sm-1 col-form-label">G1</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g1">
+        </div>
+        <label class="col-sm-1 col-form-label">G3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control g3">
+        </div>
+        <label class="col-sm-1 col-form-label">O1</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control o1">
+        </div>
+        <label class="col-sm-1 col-form-label">O3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control o3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix p-1"></div>
+
+  <div class="card" style="width: 96%; margin-left:auto; margin-right:auto;" id="worker">
+    <div class="card-header">
+      Worker
+    </div>
+
+    <div class="clearfix p-1"></div>
+
+    <div class="container">
+
+      <div class="mb-3 row">
+        <label class="col-sm-1 col-form-label">C2</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control c2">
+        </div>
+        <label class="col-sm-1 col-form-label">C3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control c3">
+        </div>
+        <label class="col-sm-1 col-form-label">B2</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control b2">
+        </div>
+        <label class="col-sm-1 col-form-label">B3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control b3">
+        </div>
+        <label class="col-sm-1 col-form-label">E2</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control e2">
+        </div>
+        <label class="col-sm-1 col-form-label">E3</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control e3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix p-1"></div>
+
+
+  <div class="card" style="width: 96%; margin-left:auto; margin-right:auto;">
+    <div class="card-header">
+      Export
+    </div>
+    <div class="container">
+      <div class="clearfix p-1"></div>
+      <button type="button" class="col-sm-1 btn btn-outline-success" onclick="data_export()">Export</button>
+      <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label" for="exported">Current Status</label>
+        <textarea class="form-control" id="exported" readonly></textarea>
+      </div>
+      <div class="clearfix p-1"></div>
+      <button type="button" class="col-sm-1 btn btn-outline-success" onclick="copy_exported_to_clipboard()">Copy</button>
+      <div class="clearfix p-1"></div>
+    </div>
+  </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
+<script src="gwt.js"></script>
+</body>
+</html>

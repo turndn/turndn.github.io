@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3453933.3454020,
+author = {Ishiguro, Kenta and Yasuno, Naoki and Aublin, Pierre-Louis and Kono, Kenji},
+title = {Mitigating Excessive VCPU Spinning in VM-Agnostic KVM},
+year = {2021},
+isbn = {9781450383943},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3453933.3454020},
+doi = {10.1145/3453933.3454020},
+abstract = {In virtualized environments, oversubscribing virtual CPUs (vCPUs) on physical CPUs (pCPUs) is common to utilize CPU resources efficiently. Unfortunately, excessive vCPU spinning, which occurs when a vCPU is waiting in a spin loop for an event from a descheduled vCPU, causes serious performance degradation. Usually, the VM-agnostic hypervisor tries to prevent excessive vCPU spinning by rescheduling vCPUs when an excessive spin is detected by hardware support for virtualization.  This paper investigates the effectiveness of KVM vCPU scheduler and shows it fails to avoid excessive vCPU spinning in many opportunities. Our in-depth analysis reveals simple modifications to KVM (41 LOC) improve the mitigation of excessive vCPU spinning. We have identified three problems: 1) scheduler mismatch, 2) lost opportunity, and 3) overboost. The first problem comes from the mismatch between the KVM vCPU scheduler and the Linux scheduler. The second and third problems come from an inefficient algorithm for choosing the next candidate vCPU to be scheduled. Our simple modifications gracefully resolves the problems and the performance improves by up to 80 \%. Our results imply the VM-agnostic hypervisor can resolve excessive vCPU spinning more gracefully than previously believed.},
+booktitle = {Proceedings of the 17th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments},
+pages = {139--152},
+numpages = {14},
+keywords = {Virtualization, Hypervisor},
+location = {Virtual, USA},
+series = {VEE 2021}
+}

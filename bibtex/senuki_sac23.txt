@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3555776.3577687,
+author = {Senuki, Mana and Ishiguro, Kenta and Kono, Kenji},
+title = {Nioh-PT: Virtual I/O Filtering for Agile Protection against Vulnerability Windows},
+year = {2023},
+isbn = {9781450395175},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3555776.3577687},
+doi = {10.1145/3555776.3577687},
+abstract = {Hypervisor vulnerabilities cause severe security issues in multi-tenant cloud environments because hypervisors guarantee isolation among virtual machines (VMs). Unfortunately, hypervisor vulnerabilities are continuously reported, and device emulation in hypervisors is one of the hotbeds because of its complexity. Although applying patches to fix the vulnerabilities is a common way to protect hypervisors, it takes time to develop the patches because the internal knowledge on hypervisors is mandatory. The hypervisors are exposed to the threat of the vulnerabilities exploitation until the patches are released.This paper proposes Nioh-PT, a framework for filtering illegal I/O requests, which reduces the vulnerability windows of the device emulation. The key insight of Nioh-PT is that malicious I/O requests contain illegal I/O sequences, a series of I/O requests that are not issued during normal I/O operations. Nioh-PT filters out those illegal I/O sequences and protects device emulators against the exploitation. The filtering rules, which define illegal I/O sequences for virtual device exploits, can be specified without the knowledge on the internal implementation of hypervisors and virtual devices, because Nioh-PT is decoupled from hypervisors and the device emulators. We develop 11 filtering rules against four real-world vulnerabilities in device emulation, including CVE-2015-3456 (VENOM) and CVE-2016-7909. We demonstrate that Nioh-PT with these filtering rules protects against the virtual device exploits and introduces negligible overhead by up to 8\% for filesystem and storage benchmarks.},
+booktitle = {Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing},
+pages = {1293--1300},
+numpages = {8},
+keywords = {virtualization, virtual device, security, cloud computing},
+location = {Tallinn, Estonia},
+series = {SAC '23}
+}

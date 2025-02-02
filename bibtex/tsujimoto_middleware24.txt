@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3652892.3700779,
+author = {Tsujimoto, Yuki and Sato, Yuki and Yasukata, Kenichi and Ishiguro, Kenta and Kono, Kenji},
+title = {PvCC: A vCPU Scheduling Policy for DPDK-applied Systems at Multi-Tenant Edge Data Centers},
+year = {2024},
+isbn = {9798400706233},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3652892.3700779},
+doi = {10.1145/3652892.3700779},
+abstract = {This paper explores a practical means to employ Data Plane Development Kit (DPDK), a kernel-bypassing framework for packet processing, in resource-limited multi-tenant edge data centers. The problem is that the traditional virtual CPU (vCPU) schedulers are not well compatible with the event detection model of DPDK, which needs to monopolize a physical CPU (pCPU) for NIC register polling. Consequently, DPDK-applied systems running on consolidated Virtual Machines (VMs), a common setup at edges, fail to achieve low serving latencies regardless of the use of DPDK. Toward edge data center providers, this work presents a new vCPU scheduling policy named Polling vCPU Consolidation (PvCC) which runs DPDK-applied systems on dedicated pCPUs adopting microsecond-scale time slices. Along with this, we introduce a mechanism to determine an appropriate number of dedicated pCPUs according to customers' demands represented through a newly introduced vCPU scaling API enabling customers to scale up/down the vCPUs of their VMs at runtime. Our experiments show that PvCC allows DPDK-applied systems running on consolidated VMs to achieve low serving latencies, and our vCPU scaling API enables customers to adjust CPU resource assignment according to the incoming request rate and providers to effectively assign spare pCPUs to VMs executing non-latency-sensitive best-effort tasks.},
+booktitle = {Proceedings of the 25th International Middleware Conference},
+pages = {379–391},
+numpages = {13},
+keywords = {virtualization, consolidation, scheduling, DPDK},
+location = {Hong Kong, Hong Kong},
+series = {MIDDLEWARE '24}
+}

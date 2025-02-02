@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3678015.3680481,
+author = {Yasukata, Kenichi and Ishiguro, Kenta},
+title = {Developing Process Scheduling Policies in User Space with Common OS Features},
+year = {2024},
+isbn = {9798400711053},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3678015.3680481},
+doi = {10.1145/3678015.3680481},
+abstract = {This paper explores a programming technique that enables process scheduling policy development in user space by only using common Operating System (OS) features. We propose a mechanism called the priority elevation trick that actively manipulates the priorities of processes to realize a certain process scheduling policy atop a conventional kernel-space process scheduler. Our experiments quantify its overheads on bare-metal and Virtual Machine (VM) setups and demonstrate that its three use cases, microsecond-scale time slicing, table-driven scheduling, and preemptive scheduling, contribute to networked server performance.},
+booktitle = {Proceedings of the 15th ACM SIGOPS Asia-Pacific Workshop on Systems},
+pages = {38–44},
+numpages = {7},
+keywords = {Operating System, Process Scheduling, User Space},
+location = {Kyoto, Japan},
+series = {APSys '24}
+}

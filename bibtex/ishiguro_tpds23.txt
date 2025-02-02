@@ -1,0 +1,9 @@
+@ARTICLE{10190175,
+  author={Ishiguro, Kenta and Yasuno, Naoki and Aublin, Pierre-Louis and Kono, Kenji},
+  journal={IEEE Transactions on Parallel and Distributed Systems}, 
+  title={Revisiting VM-Agnostic KVM vCPU Scheduler for Mitigating Excessive vCPU Spinning}, 
+  year={2023},
+  volume={34},
+  number={10},
+  pages={2615-2628},
+  doi={10.1109/TPDS.2023.3297688}}
