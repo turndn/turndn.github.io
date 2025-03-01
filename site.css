@@ -5,4 +5,6 @@ html {
 }
 
 #home {
+  padding: 32px;
+  max-width: 1024px;
 }
