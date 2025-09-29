@@ -10,12 +10,9 @@
       <h1>Kenta Ishiguro</h1>
       I am currently a postdoctoral researcher working with Alain Tchana and Renaud Lachaize at KrakOS, Grenoble INP - UGA, France. I was a project assistant professor working with Kenji Kono at sslab, Keio University, Japan. I was an associate faculty member at Hosei University working with Toshio Hirotsu. I completed my Ph.D under the supervision of Kenji Kono at Keio university, Japan.
       
-      <h2>Interests</h2>
-      Operating systems, Hypervisor, Software security
-
       <h2>Publications</h2>
       <ul>
-        <li>
+        <li id="swhiteout_apsys25">
           <b>Nesting Overlay File Systems with ShadowWhiteout</b><br>
           Kenta Ishiguro, Kohei Hayama, Ayase Yokoyama, Hiroshi Yamada, and Toshio Hirotsu<br>
           In Proceedings of the 16th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys '25),
@@ -27,6 +24,15 @@
           <br><br>
         </li>
         <li>
+          <b>Achieving Low Serving Latency in DPDK-applied Systems at Multi-Tenant Edge Clouds</b><br>
+          Yuki Tsujimoto, Yuki Sato, Kenichi Yasukata, Kenta Ishiguro, and Kenji Kono<br>
+          In IEICE Transactions on Information and Systems Vol.E??-? No.?,
+          Sep. 2025
+          <br>
+          [<a href="https://www.jstage.jst.go.jp/article/transinf/advpub/0/advpub_2025EDP7023/_article/-char/ja/">paper</a>]
+          <br><br>
+        </li>
+        <li id="pvcc_middleware24">
           <b>PvCC: A vCPU Scheduling Policy for DPDK-applied Systems at Multi-Tenant Edge Data Centers</b><br>
           Yuki Tsujimoto, Yuki Sato, Kenichi Yasukata, Kenta Ishiguro, and Kenji Kono<br>
           In Proceedings of the 24th International Middleware Conference (Middleware '24),
@@ -37,7 +43,7 @@
           [<a href="https://github.com/sslab-keio/PvCC">artifact</a>]
           <br><br>
         </li>
-        <li>
+        <li id="sched_apsys24">
           <b>Developing Process Scheduling Policies in User Space with Common OS Features</b><br>
           Kenichi Yasukata and Kenta Ishiguro<br>
           In Proceedings of the 15th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys '24),
@@ -48,7 +54,7 @@
           [<a href="https://github.com/yasukata/priority-elevation-trick">artifact</a>]
           <br><br>
         </li>
-        <li>
+        <li id="fitx_atc24">
           <b>Balancing Analysis Time and Bug Detection: Daily Development-friendly Bug Detection in Linux</b><br>
           Keita Suzuki, Kenta Ishiguro, and Kenji Kono<br>
           In Proceedings of 2024 USENIX Annual Technical Conference (USENIX ATC '24),
@@ -59,17 +65,18 @@
           [<a href="https://github.com/sslab-keio/FiTx">artifact</a>]
           <br><br>
         </li>
-        <li>
+        <li id="ple_tpds23">
           <b>Revisiting VM-Agnostic KVM vCPU Scheduler for Mitigating Excessive vCPU Spinning</b><br>
           Kenta Ishiguro, Naoki Yasuno, Pierre-Louis Aublin, and Kenji Kono<br>
           In IEEE Transactions on Parallel and Distributed Systems, vol. 34, no. 10, pp. 2615-2628,
           Oct. 2023
           <br>
           [<a href="https://ieeexplore.ieee.org/abstract/document/10190175">paper</a>],
-          [<a href="bibtex/ishiguro_tpds23.txt">bibtex</a>]
+          [<a href="bibtex/ishiguro_tpds23.txt">bibtex</a>],
+          [<a href="https://github.com/sslab-keio/ple-kvm">source code</a>]
           <br><br>
         </li>
-        <li>
+        <li id="zploine_atc23">
           <b>zpoline: a system call hook mechanism based on binary rewriting</b><br>
           Kenichi Yasukata, Hajime Tazaki, Pierre-Louis Aublin, and Kenta Ishiguro<br>
           In Proceedings of 2023 USENIX Annual Technical Conference (USENIX ATC '23),
@@ -82,7 +89,7 @@
           [<a href="https://github.com/yasukata/zpoline">zpoline source code</a>]
           <br><br>
         </li>
-        <li>
+        <li id="niohpt_sac23">
           <b>Nioh-PT: Virtual I/O Filtering for Agile Protection against Vulnerability Windows</b><br>
           Mana Senuki, Kenta Ishiguro, and Kenji Kono<br>
           In Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing (SAC '23),
@@ -92,7 +99,7 @@
           [<a href="bibtex/senuki_sac23.txt">bibtex</a>]
           <br><br>
         </li>
-        <li>
+        <li id="ple_vee21">
           <b>Mitigating Excessive vCPU Spinning in VM-Agnostic KVM</b><br>
           Kenta Ishiguro, Naoki Yasuno, Pierre-Louis Aublin, and Kenji Kono<br>
           In Proceedings of the 17th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE '21),
@@ -112,7 +119,7 @@
           [<a href="https://search.ieice.org/bin/summary.php?id=e103-d_7_1660">paper</a>]
           <br><br>
         </li>
-        <li>
+        <li id="fwinst_eurosec18">
           <b>Hardening Hypervisors against Vulnerabilities in Instruction Emulators</b><br>
           Kenta Ishiguro and Kenji Kono<br>
           In Proceedings of the 11th European Workshop on Systems Security (EuroSec '18),
@@ -130,27 +137,6 @@
           <b>Retrofitting VMM Optimizations to Confidential VMs</b><br>
           Yuma Okamura, Kenta Ishiguro, Terufumi Hata, and Kenji Kono<br>
           USENIX OSDI 2025<br>
-          
-          <br>
-        </li>
-        <li>
-          <b>A Static Analysis Approach for Cross Language FiT Bugs Detection</b><br>
-          Li Shengyang, Kenta Ishiguro, and Kenji Kono<br>
-          ApSys 2024<br>
-          
-          <br>
-        </li>
-        <li>
-          <b>Low Latency Kernel Monitoring with XDP in Large Distributed Environments</b><br>
-          Yuki Maruyama, Kenta Ishiguro, and Kenji Kono<br>
-          ApSys 2024<br>
-          
-          <br>
-        </li>
-        <li>
-          <b>"Permission Denied!" Why?</b><br>
-          Hiroki Nakajima, Kenta Ishiguro, and Kenji Kono<br>
-          ApSys 2024<br>
           
           <br>
         </li>
