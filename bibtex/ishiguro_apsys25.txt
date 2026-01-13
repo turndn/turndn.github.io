@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3725783.3764408,
+author = {Ishiguro, Kenta and Hayama, Kohei and Yokoyama, Ayase and Yamada, Hiroshi and Hirotsu, Toshio},
+title = {Nesting Overlay File Systems with ShadowWhiteout},
+year = {2025},
+isbn = {9798400715723},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3725783.3764408},
+doi = {10.1145/3725783.3764408},
+abstract = {Container technology improves storage efficiency by sharing base images through overlay file systems (overlayfs). Overlayfs enables temporary modifications while preserving original files by merging multiple directories into a single unified view. However, in container-in-container environments, the current overlayfs approach incurs inefficiency in terms of storage usage, as it does not support nesting due to file deletion operations. To delete a preserved original file, a special file is created indicating that the file is deleted in the overlayfs, but this mechanism lacks expressiveness for nesting. This paper introduces ShadowWhiteout, a new representation for file deletion in overlayfs. We identify key technical challenges and implement a ShadowWhiteout-capable overlayfs. Our system allows nesting overlayfs while maintaining reasonable runtime overhead.},
+booktitle = {Proceedings of the 16th ACM SIGOPS Asia-Pacific Workshop on Systems},
+pages = {15–21},
+numpages = {7},
+keywords = {containers, overlay file systems},
+location = {Lotte Hotel World, Emerald Hall, Seoul, Republic of Korea},
+series = {APSys '25}
+}
